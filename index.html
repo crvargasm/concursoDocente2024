@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="icon" type="image/x-icon" href="public/favicon.ico">
+  <link rel="icon" type="image/png" href="public/images/favicon-blue.png">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -16,57 +16,78 @@
 </head>
 
 <body>
-  <main class="tw-w-full tw-h-full tw-m-0 tw-p-0">
+  <div class="tw-w-full tw-h-full tw-m-0 tw-p-0">
     <div class="tw-bg-no-repeat tw-bg-center tw-bg-cover" style="background-image: url('public/images/Fondo.png');">
 
-      <header class="tw-flex">
+      <!-- Header Desktop -->
+      <header class="tw-flex max-sm:tw-hidden">
         <div class="tw-w-2/5">
-          <img src="public/images/Banner identidficador_con.png" alt="banner concurso docente facultad ingenieria"
-            class="tw-w-full" />
+          <img src="public/images/Hero_Desktop.png" alt="Concurso docente facultad ingenieria" class="tw-w-full" />
         </div>
-        <div class="tw-w-3/5 tw-my-auto tw-ml-8">
+        <div class="tw-w-3/5 tw-my-auto tw-ml-8 tw-max-w-screen-lg">
           <div class="tw-flex tw-flex-wrap tw-gap-8">
-            <button class="tw-group tw-w-1/4">
-              <img src="public/images/Boton_Normatividad.png" alt=""
-                class="group-hover:tw-hidden tw-transition-transform">
-              <img src="public/images/Boton_Normatividad_Hover.png" alt=""
-                class="tw-hidden group-hover:tw-block tw-transition-transform">
+            <button class="tw-group tw-w-1/4 tw-bg-blue-950">
+              <img src="public/images/Boton_Normatividad_Desktop.png" alt="boton normatividad"
+                class="group-hover:-tw-translate-x-1 group-hover:-tw-translate-y-1 group-active:tw-translate-x-0 group-active:tw-translate-y-0 tw-transition-transform">
             </button>
-            <button class="tw-group tw-w-1/4">
-              <img src="public/images/Boton_Resultados.png" alt=""
-                class="group-hover:tw-hidden tw-transition-transform">
-              <img src="public/images/Boton_Resultados_Hover.png" alt=""
-                class="tw-hidden group-hover:tw-block tw-transition-transform">
+            <button class="tw-group tw-w-1/4 tw-bg-blue-950">
+              <img src="public/images/Boton_Resultados_Desktop.png" alt="boton resultados"
+                class="group-hover:-tw-translate-x-1 group-hover:-tw-translate-y-1 group-active:tw-translate-x-0 group-active:tw-translate-y-0 tw-transition-transform">
             </button>
-            <button class="tw-group tw-w-1/4">
-              <img src="public/images/Boton_TyC.png" alt="" class="group-hover:tw-hidden tw-transition-transform">
-              <img src="public/images/Boton_TyC_Hover.png" alt=""
-                class="tw-hidden group-hover:tw-block tw-transition-transform">
+            <button class="tw-group tw-w-1/4 tw-bg-blue-950">
+              <img src="public/images/Boton_TyC_Desktop.png" alt="boton terminos y condiciones"
+                class="group-hover:-tw-translate-x-1 group-hover:-tw-translate-y-1 group-active:tw-translate-x-0 group-active:tw-translate-y-0 tw-transition-transform">
             </button>
           </div>
         </div>
       </header>
 
-      <section class="tw-mt-10">
+      <!-- Header Mobile -->
+      <header class="sm:tw-hidden">
+        <div class="tw-w-full sm:tw-hidden">
+          <img src="public/images/Hero_Mobile.png" alt="Concurso docente facultad ingenieria" class="tw-w-full" />
+        </div>
+        <div class="tw-mt-4 tw-flex tw-justify-center tw-w-full tw-gap-6">
+          <button class="tw-w-1/4">
+            <img src="public/images/Boton_Normatividad_Mobile.png" alt="boton normatividad" class="">
+          </button>
+          <button class="tw-w-1/4">
+            <img src="public/images/Boton_Resultados_Mobile.png" alt="boton resultados" class="">
+          </button>
+          <button class="tw-w-1/4">
+            <img src="public/images/Boton_TyC_Mobile.png" alt="boton terminos y condiciones" class="">
+          </button>
+        </div>
+      </header>
+
+      <section class="sm:tw-mt-10 max-sm:tw-mt-4">
         <img src="public/images/Banner_provisional.png" alt="" class="tw-w-full">
       </section>
 
-      <section class="tw-mt-10 tw-flex tw-w-full tw-justify-center tw-gap-4">
-        <button class="tw-w-1/3 tw-group">
-          <img src="public/images/Boton_Ingreso_App.png" alt="" class="group-active:tw-hidden tw-transition-transform">
-          <img src="public/images/Boton_Ingreso_App_Hover.png" alt=""
-            class="tw-hidden group-active:tw-block tw-transition-transform">
-        </button>
-        <img src="public/images/Pointer.png" alt="" class="tw-w-20">
+      <section class="sm:tw-mt-10 max-sm:tw-mt-4 tw-flex tw-justify-center tw-gap-4">
+        <div class="sm:tw-w-1/3 tw-flex tw-h-full tw-max-w-screen-lg max-sm:tw-w-8/12">
+          <button class="tw-group tw-bg-blue-950 max-sm:tw-hidden">
+            <img src="public/images/Boton_Ingreso_App.png" alt="boton ingreso aplicativo"
+              class="-tw-translate-x-1 -tw-translate-y-1 group-active:-tw-translate-x-0 group-active:-tw-translate-y-0 tw-transition-transform">
+          </button>
+          <button class="tw-group tw-bg-blue-950 sm:tw-hidden">
+            <img src="public/images/Boton_Ingreso_App.png" alt="boton ingreso aplicativo"
+              class="-tw-translate-x-0.5 -tw-translate-y-0.5 group-active:-tw-translate-x-0 group-active:-tw-translate-y-0 tw-transition-transform">
+          </button>
+          <img src="public/images/Pointer.png" alt="" class="tw-w-1/12 max-sm:tw-hidden">
+        </div>
       </section>
 
-      <section class="tw-mt-10 tw-flex tw-justify-center">
-        <div class="tw-w-10/12">
-          <img src="public/images/CALENDARIO.png" alt="">
+      <section class="sm:tw-mt-10 max-sm:tw-mt-4 tw-flex tw-justify-center">
+        <div class="tw-w-10/12 tw-max-w-screen-lg max-sm:tw-hidden">
+          <img src="public/images/Calendario_Desktop.png" alt="calendario concurso docente 2024" class="">
+        </div>
+        <div class="tw-w-full tw-max-w-screen-lg sm:tw-hidden">
+          <img src="public/images/Calendario_Mobile.png" alt="calendario concurso docente 2024" class="">
         </div>
       </section>
     </div>
-  </main>
+  </div>
 </body>
 
 </html>
